@@ -1,0 +1,9 @@
+<input type="text" placeholder="Enter album id" [formControl]="searchInput">
+<div class="results">
+  <app-loading style="width: 50px" *ngIf="isLoading"></app-loading>
+  <span *ngIf="noResults && !isLoading">Sorry, we couldn’t find any albmus with id "{{ searchValue }}" </span>
+  <div class="album" *ngIf="album && !isLoading && !noResults">
+    <div class="title">{{ album.title }}</div>
+    <div class="user">Added by user id: {{ album.userId }}</div>
+  </div>
+</div>

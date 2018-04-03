@@ -1,0 +1,6 @@
+<app-loading style="width: 50px" *ngIf="isLoading"></app-loading>
+<app-album-item *ngFor="let album of albums" [album]="album"></app-album-item>
+<div class="loadMore" (click)="loadMore(); isLoadingMore = true" *ngIf="isThereMore" [ngClass]="{'disable': isLoadingMore}">
+  Load more
+  <app-loading *ngIf="isLoadingMore"></app-loading>
+</div>

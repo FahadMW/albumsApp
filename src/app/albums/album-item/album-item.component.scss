@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  padding: 15px 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 15px;
+  transition: all ease 300ms;
+}
+
+:host:hover {
+  background-color: hsla(0, 0%, 98%, 1);
+}
+
+.id {
+  margin-right: 10px;
+}
+
+.title {
+  margin-right: auto;
+}
+
+.material-icons {
+  margin-left: 10px;
+  font-size: 15px;
+  color: hsla(0, 0%, 0%, 0.2);
+  transition: all ease 300ms;
+  cursor: pointer;
+}
+
+.material-icons.active {
+  color: #FF3983;
+}
+
+
