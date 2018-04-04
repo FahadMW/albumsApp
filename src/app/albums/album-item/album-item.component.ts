@@ -9,15 +9,10 @@ import { Album } from '../album.model';
 export class AlbumItemComponent implements OnInit {
 
   @Input() album: Album;
-  @Output() OnFavorite = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
-  }
-
-  favorite(id) {
-    this.OnFavorite.emit(id);
   }
 
 }
